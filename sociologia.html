@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociologia - Portal de Ciências</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+</head>
+<body>
+    <!-- Fundo de partículas -->
+    <canvas id="particles-js" class="particles"></canvas>
+
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Portal de Ciências</h1>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="neon-link">Início</a></li>
+                <li><a href="sociologia.html" class="neon-link">Sociologia</a></li>
+                <li><a href="fisica.html" class="neon-link">Física</a></li>
+                <li><a href="quimica.html" class="neon-link">Química</a></li>
+                <li><a href="biologia.html" class="neon-link">Biologia</a></li>
+                <li><a href="matematica.html" class="neon-link">Matemática</a></li>
+                <li><a href="historia.html" class="neon-link">História</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-header">
+        <h1 class="neon-title">Sociologia</h1>
+        <p>A ciência que estuda as relações sociais, estruturas e comportamentos coletivos humanos.</p>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section class="content-section">
+        <div class="container">
+            <div class="topic">
+                <h3>O que é Sociologia?</h3>
+                <p>A Sociologia é a ciência social que estuda as relações sociais, instituições e estruturas que constituem a sociedade humana. Desenvolvida inicialmente no século XIX, com pensadores como Auguste Comte, Émile Durkheim, Karl Marx e Max Weber, a Sociologia busca compreender como as interações entre indivíduos formam padrões sociais e como essas estruturas influenciam o comportamento humano.</p>
+                <p>Ao analisar fenômenos sociais através de pesquisas empíricas e desenvolvimento teórico, a Sociologia fornece ferramentas para entender questões como desigualdade social, relações de poder, mudanças culturais e transformações históricas das sociedades.</p>
+                <a href="#temas" class="neon-button" onclick="scrollToElement('temas')">Explorar Temas</a>
+            </div>
+
+            <div class="topic" id="temas">
+                <h3>Principais Temas da Sociologia</h3>
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <h4>Teoria Sociológica Clássica</h4>
+                        <p>Estudo dos pensadores clássicos como Émile Durkheim, Max Weber e Karl Marx, que estabeleceram as bases fundamentais para a compreensão sociológica da modernidade, capitalismo, racionalização, solidariedade social e luta de classes.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Estratificação Social</h4>
+                        <p>Análise das desigualdades estruturais que dividem a sociedade em grupos hierarquizados, incluindo classes sociais, gênero, raça, etnia e como estas categorias influenciam oportunidades de vida e acesso a recursos.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Cultura e Identidade</h4>
+                        <p>Investigação sobre como os sistemas simbólicos, valores, crenças e práticas culturais moldam identidades individuais e coletivas, além de como a cultura é transmitida, reproduzida e transformada ao longo do tempo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <h3>Áreas de Especialização</h3>
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <h4>Sociologia Urbana</h4>
+                        <p>Estuda as dinâmicas sociais específicas das cidades, processos de urbanização, segregação espacial, gentrificação e como o espaço urbano influencia interações sociais e relações de poder na modernidade.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Sociologia do Trabalho</h4>
+                        <p>Analisa as transformações nas relações de trabalho, estruturas organizacionais, movimentos sindicais, precarização do emprego e os impactos da tecnologia nos processos produtivos e no mercado de trabalho.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Sociologia Digital</h4>
+                        <p>Campo emergente que investiga como as tecnologias digitais, redes sociais e inteligência artificial reconfiguram relações sociais, vigilância, formação de identidades e participação política na era da informação.</p>
+                    </div>
+                </div>
+                <a href="index.html" class="home-button">Voltar à Página Principal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Voltar ao Topo -->
+    <div class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 3l-8 8h5v10h6v-10h5z"/>
+        </svg>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Ciências. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
