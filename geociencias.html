@@ -3,159 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geociências | Portal de Estudos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Geociências - Portal de Ciências</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
 </head>
 <body>
-    <canvas id="particleCanvas"></canvas>
-    
+    <!-- Canvas para partículas de fundo -->
+    <canvas id="particles-js" class="particles"></canvas>
+
+    <!-- Header -->
     <header>
-        <nav class="navbar">
+        <div class="container">
             <div class="logo">
-                <a href="index.html">Portal<span>Estudos</span></a>
+                <h1>Portal de Ciências</h1>
             </div>
-            <div class="nav-links">
-                <a href="astronomia.html">Astronomia</a>
-                <a href="geociencias.html" class="active">Geociências</a>
-                <a href="historia.html">História</a>
-                <a href="geografia.html">Geografia</a>
-                <a href="filosofia.html">Filosofia</a>
-                <a href="sociologia.html">Sociologia</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="neon-link">Home</a></li>
+                <li><a href="geociencias.html" class="neon-link">Geociências</a></li>
+                <li><a href="geografia.html" class="neon-link">Geografia</a></li>
+                <li><a href="filosofia.html" class="neon-link">Filosofia</a></li>
+                <li><a href="sociologia.html" class="neon-link">Sociologia</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        <section class="subject-hero">
-            <h1 class="subject-title">Geociências</h1>
-            <div class="subject-intro">
-                <p>As Geociências englobam o estudo da Terra, seus componentes e processos, incluindo a geologia, meteorologia, oceanografia e outras disciplinas que investigam a estrutura, composição e dinâmica do nosso planeta ao longo do tempo geológico.</p>
-            </div>
-        </section>
+    <!-- Header da Página -->
+    <section class="page-header">
+        <h2 class="neon-title">Geociências</h2>
+        <p>O estudo científico da Terra e dos processos que a moldam, incluindo geologia, meteorologia, oceanografia e astronomia.</p>
+    </section>
 
-        <section class="subject-content">
-            <div class="topic-card">
-                <div class="topic-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"></path>
-                        <path d="M12 22v-4M12 2v4M2 12h4M18 12h4"></path>
-                        <path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M16.24 4.93l2.83-2.83M4.93 19.07l2.83-2.83"></path>
-                    </svg>
-                </div>
+    <!-- Conteúdo Principal -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Tópico 1 -->
+            <div class="topic">
                 <h3>Geologia</h3>
-                <p>Estude a composição, estrutura e processos que moldam a Terra, desde a formação de rochas e minerais até a movimentação das placas tectônicas e a evolução das paisagens.</p>
-                <div class="topic-details">
-                    <ul>
-                        <li>Mineralogia e petrologia</li>
-                        <li>Tectônica de placas</li>
-                        <li>Processos de sedimentação e estratigrafia</li>
-                        <li>Geologia estrutural e terremotos</li>
-                    </ul>
+                <p>A geologia é a ciência que estuda a Terra, sua composição, estrutura, propriedades físicas, história e os processos que a moldam. Compreende o estudo de materiais que compõem a Terra e os processos pelos quais eles são formados, movidos e transformados.</p>
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <h4>Mineralogia</h4>
+                        <p>Estudo dos minerais, incluindo sua formação, composição, classificação e propriedades. Os minerais são os blocos de construção das rochas e têm diversas aplicações em nossa sociedade.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Tectônica de Placas</h4>
+                        <p>Teoria que explica o movimento das grandes placas que formam a crosta terrestre, responsável por terremotos, formação de montanhas e atividade vulcânica.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Estratigrafia</h4>
+                        <p>Ramo da geologia que estuda as camadas de rochas (estratos) e sua cronologia, permitindo entender a história da Terra e dos seres vivos.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="topic-card">
-                <div class="topic-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17.5 21.5H6.5a2 2 0 0 1-2-2v-14a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"></path>
-                        <path d="M9.5 21.5v-17"></path>
-                        <path d="M14.5 21.5v-17"></path>
-                        <path d="M3.5 6.5h18"></path>
-                        <path d="M3.5 11.5h18"></path>
-                        <path d="M3.5 16.5h18"></path>
-                    </svg>
-                </div>
-                <h3>Paleontologia</h3>
-                <p>Descubra o fascinante mundo dos fósseis e a história da vida na Terra, desde os primeiros organismos unicelulares até os dinossauros e a evolução dos mamíferos.</p>
-                <div class="topic-details">
-                    <ul>
-                        <li>Tafonomia e processos de fossilização</li>
-                        <li>Evolução e extinções em massa</li>
-                        <li>Paleoclimas e paleoambientes</li>
-                        <li>Biogeografia histórica</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="topic-card">
-                <div class="topic-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"></path>
-                        <path d="M16 14v2"></path>
-                        <path d="M8 16v2"></path>
-                        <path d="M12 16v4"></path>
-                    </svg>
-                </div>
+            <!-- Tópico 2 -->
+            <div class="topic">
                 <h3>Meteorologia</h3>
-                <p>Compreenda os fenômenos atmosféricos, padrões climáticos e sistemas meteorológicos que afetam nosso cotidiano, desde a formação de nuvens até os ciclones tropicais.</p>
-                <div class="topic-details">
-                    <ul>
-                        <li>Dinâmica da atmosfera</li>
-                        <li>Previsão do tempo e modelagem climática</li>
-                        <li>Fenômenos como El Niño e La Niña</li>
-                        <li>Mudanças climáticas antropogênicas</li>
-                    </ul>
+                <p>A meteorologia é a ciência que estuda os fenômenos atmosféricos e as leis que os regem, visando compreender e prever o clima e o tempo. Envolve a análise da atmosfera terrestre e seus processos físicos, interações com o oceano e a superfície.</p>
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <h4>Previsão do Tempo</h4>
+                        <p>Utiliza dados atmosféricos, modelos matemáticos e tecnologias avançadas para prever condições meteorológicas futuras com precisão crescente.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Mudanças Climáticas</h4>
+                        <p>Estudo das alterações nos padrões climáticos ao longo do tempo, suas causas (naturais e antropogênicas) e impactos nos ecossistemas e sociedades.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Fenômenos Atmosféricos</h4>
+                        <p>Análise de eventos como furacões, tornados, tempestades e outros fenômenos que ocorrem na atmosfera terrestre e afetam o clima.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="topic-card">
-                <div class="topic-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 6h18"></path>
-                        <path d="M3 12h18"></path>
-                        <path d="M3 18h18"></path>
-                        <path d="M4 6v12"></path>
-                        <path d="M20 6v12"></path>
-                        <path d="M8 6v12"></path>
-                        <path d="M16 6v12"></path>
-                    </svg>
-                </div>
+            <!-- Tópico 3 -->
+            <div class="topic">
                 <h3>Oceanografia</h3>
-                <p>Explore o vasto mundo dos oceanos, suas correntes, ecossistemas marinhos, química das águas e a interação entre os oceanos e o clima global.</p>
-                <div class="topic-details">
-                    <ul>
-                        <li>Correntes oceânicas e circulação global</li>
-                        <li>Química marinha e acidificação dos oceanos</li>
-                        <li>Geologia marinha e tectônica de placas</li>
-                        <li>Ecossistemas marinhos e biodiversidade</li>
-                    </ul>
+                <p>A oceanografia estuda os oceanos e mares do planeta, abrangendo suas propriedades físicas, químicas e biológicas, bem como os processos que ocorrem em suas águas e no fundo marinho.</p>
+                <div class="topic-grid">
+                    <div class="topic-card">
+                        <h4>Correntes Marítimas</h4>
+                        <p>Estudo das grandes massas de água em movimento nos oceanos, que influenciam o clima global e os ecossistemas marinhos.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Vida Marinha</h4>
+                        <p>Investigação da biodiversidade dos oceanos, desde microrganismos até grandes mamíferos, e suas adaptações às condições extremas dos ambientes marinhos.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h4>Geologia Marinha</h4>
+                        <p>Análise da estrutura e composição do fundo oceânico, incluindo dorsais meso-oceânicas, fossas abissais e outros acidentes geográficos submarinos.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
 
+            <a href="index.html" class="home-button">Voltar para Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>Portal de Estudos © 2025 - Todos os direitos reservados</p>
-            <div class="social-links">
-                <a href="#" class="social-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                </a>
-                <a href="#" class="social-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="#" class="social-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                    </svg>
-                </a>
-            </div>
+        <div class="container">
+            <p>&copy; 2025 Portal de Ciências - Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <div class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </div>
 
     <script src="script.js"></script>
 </body>
